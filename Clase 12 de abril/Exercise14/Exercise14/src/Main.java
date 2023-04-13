@@ -25,7 +25,7 @@ public class Main {
       }
       edadPromedio = promedioDeEdades / hijos;
     }
-    System.out.println("En total, se censaron " + (i - 1) + " familias, " + j + "" +
+    System.out.println("En total, se censaron " + (i - 1) + " familias, " + hijos + "" +
       " hijos en total, y la edad promedio de ellos es: " +
       (edadPromedio));
       scanner.close();
