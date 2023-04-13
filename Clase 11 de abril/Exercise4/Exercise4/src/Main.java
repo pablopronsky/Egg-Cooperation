@@ -17,6 +17,7 @@ import java.util.Scanner;
           case "9" -> System.out.println("Tu número en romano es: IX");
           case "10" -> System.out.println("Tu número en romano es: X");
         }
+        scanner.close();
       }
 
     }
