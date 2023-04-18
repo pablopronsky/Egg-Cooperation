@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
       Random random = new Random();
-      int n = 10000;
+      int n = 20;
       int [] newArray = new int [n];
       int unDigito = 0;
       int dosDigitos = 0;
@@ -13,16 +13,16 @@ public class Main {
       int cincoDigitos = 0;
 
       for (int i = 0; i < newArray.length; i++){
-        newArray[i] = random.nextInt(10000);
+        newArray[i] = random.nextInt(99999);
       }
       for (int j : newArray) {
-        if (j < 10 && j > 0) {
+        if (j > 0 && j < 10) {
           unDigito++;
-        } else if (j < 100 && j > 10) {
+        } else if (j > 10 && j < 100) {
           dosDigitos++;
-        } else if (j < 1000 && j > 100) {
+        } else if (j > 100 && j < 1000) {
           tresDigitos++;
-        } else if ((j < 10000) && (j > 1000)) {
+        } else if ((j > 1000) && (j < 10000)) {
           cuatroDigitos++;
         } else cincoDigitos++;
       }
