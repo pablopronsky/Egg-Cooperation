@@ -6,21 +6,21 @@ public class Main {
 
     System.out.println("Ingrese el valor (n) hasta el cual desea saber la sucesion de Fibonacci");
     Scanner scanner = new Scanner(System.in);
-    int n = scanner.nextInt();
-    System.out.println(Arrays.toString(fibonacci(n)));
+    int numInput = scanner.nextInt();
+    System.out.println(Arrays.toString(fibonacci(numInput)));
 
   }
 
-  public static int[] fibonacci(int n) { // lo hice con recursividad pero hay otras formas
+  public static int[] fibonacci(int numInput) { // lo hice con recursividad pero hay otras formas
 
-    int[] fib = new int[n]; // se crea el vector recibiendo N como argumento (o parametro?)
-    fib[0] = 0;
-    if (n > 1) { // condicion para que no se genere un loop infinito y crashee el programa (caso base)
-      fib[1] = 1;
-      for (int i = 2; i < n; i++)
-        fib[i] = fib[i - 1] + fib[i - 2]; // cada numero es la suma de los dos anteriores
+    int[] sucesionDeFibonacci = new int[numInput]; // se crea el vector recibiendo N como argumento (o parametro?)
+    sucesionDeFibonacci[0] = 0;
+    if (numInput > 1) { // condicion para que no se genere un loop infinito y crashee el programa (caso base)
+      sucesionDeFibonacci[1] = 1;
+      for (int i = 2; i < numInput; i++)
+        sucesionDeFibonacci[i] = sucesionDeFibonacci[i - 1] + sucesionDeFibonacci[i - 2]; // cada numero es la suma de los dos anteriores
     }
-    return fib;
+    return sucesionDeFibonacci;
 
   }
 }
