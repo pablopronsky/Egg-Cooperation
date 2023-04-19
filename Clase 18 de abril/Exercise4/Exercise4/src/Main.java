@@ -3,63 +3,70 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
-    int [][] alumnosConNotas = new int [10][5];
-    double primerTrabajoEvaluativo = 0;
-    double segundoTrabajoEvaluativo = 0;
-    double primerIntegrador = 0;
-    double segundoIntegrador = 0;
+    Scanner leer = new Scanner(System.in);
 
-    // guardamos las notas del primer trabajo evaluativo en la primer fila del array
-    for (int i = 0; i < 1; i++){
-      for (int j = 0; j < 10; j++){
-        System.out.println("Ingrese la nota del primer trabajo evaluativo del alumno " + j + ": ");
-        primerTrabajoEvaluativo = scanner.nextDouble() * 0.1;
-        alumnosConNotas[i][j] = (int) primerTrabajoEvaluativo;
+    double nota1 = 0;
+    double nota2 = 0;
+    double nota3 = 0;
+    double nota4 = 0;
+    int cont = 0;
+    int cont2=0;
+
+    double [] vector;
+    vector = new double [4];
+
+    for (int i=0; i<=4; i++) {
+
+      System.out.println("DATOS DEL ALUMNO NUMERO "+ (i+1));
+
+      System.out.println("Nota 1 : Trabajo Practico 1");
+      System.out.println("Nota 2 : Trabajo Practico 2");
+      System.out.println("Nota 3 : Integrador 1");
+      System.out.println("Nota 4 : Integrador 2");
+
+      for (int j=0; j<=3; j++) {
+
+        System.out.println("INGRESE NOTA "+(j+1)+" : ");
+        vector[j] = leer.nextDouble();
       }
-    }
 
-    // guardamos las notas del segundo trabajo evaluativo en la segunda fila del array
-    for (int i = 1; i < 2; i++){
-      for (int j = 0; j < 10; j++){
-        System.out.println("Ingrese la nota del segundo trabajo evaluativo del alumno " + j + ": ");
-        segundoTrabajoEvaluativo = scanner.nextDouble() * 0.15;
-        alumnosConNotas[i][j] = (int) segundoTrabajoEvaluativo;
-      }
-    }
 
-    // guardamos las notas del primer integrador en la tercera fila del array
-    for (int i = 2; i < 3; i++){
-      for (int j = 0; j < 10; j++){
-        System.out.println("Ingrese la nota del primer integrador del alumno " + j + ": ");
-        primerIntegrador = scanner.nextDouble() * 0.25;
-        alumnosConNotas[i][j] = (int) primerIntegrador;
-      }
-    }
+      for (int k=0; k<=3; k++) {
 
-    // guardamos las notas del segundo integrador en la cuarta fila del array
-    for (int i = 3; i < 4; i++){
-      for (int j = 0; j < 10; j++){
-        System.out.println("Ingrese la nota del segundo integrador del alumno " + j + ": ");
-        segundoIntegrador = scanner.nextDouble() * 0.5;
-        alumnosConNotas[i][j] = (int) segundoIntegrador;
-      }
-    }
+        switch (i) {
 
-    // discriminamos cuantos alumnos aprobaron
-    double promedioDeNotas = primerIntegrador + segundoIntegrador + primerTrabajoEvaluativo + segundoTrabajoEvaluativo;
-    int aprobados = 0;
-    for (int i = 5; i < 6; i++){
-      for (int j = 0; j < 10; j++){
-        if (promedioDeNotas > 7) {
-          aprobados++;
+          case 0 :
+            nota1 = vector[i] * 0.10;
+            break;
+
+          case 1 :
+            nota2 = vector[i] * 0.15;
+            break;
+
+          case 2 :
+            nota3 = vector[i] * 0.25;
+            break;
+
+          case 3 :
+            nota4 = vector[i] * 0.50;
+            break;
         }
       }
-    }
+      double NOTA = nota1 + nota2 + nota3 + nota4;
 
-    // mostramos la cantidad de aprobados y desaprobados
-    System.out.println("La cantidad de alumnos aprobados es: " + aprobados);
-    System.out.println("La cantidad de alumnos desaprobados es: " + (10 - aprobados));
+      if (NOTA >= 7) {
+
+        System.out.println("EL ALUMNO APROBO");
+        cont++;
+
+      } else {
+
+        System.out.println("EL ALUMNO NO APROBO");
+        cont2++;
+      }
+    }
+    System.out.println("HAY " + cont + "ALUMNOS APROBADOS");
+    System.out.println("HAY " + cont2 + " ALUMNOS DESAPROBADOS");
   }
 }
 
