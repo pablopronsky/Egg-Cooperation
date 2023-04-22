@@ -20,7 +20,7 @@ public class Main {
       // ubica la palabra en forma de caracteres en la matriz
       columns = (int) (Math.random() * (19 - palabrasInput[i].length() - 1));
       for (int j = 0; j < palabrasInput[i].length(); j++) {
-        System.out.println(rows);
+        //System.out.println(rows);
         matrixSopaDeLetras[rows][columns] = palabrasInput[i].charAt(j);
         columns++;
       }
