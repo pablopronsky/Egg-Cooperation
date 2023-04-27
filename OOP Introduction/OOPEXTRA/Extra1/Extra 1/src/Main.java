@@ -4,6 +4,10 @@ public class Main {
   public static void main(String[] args) {
 
     Songs firstSong = new Songs();
+    firstSong.setTitle("Triple T");
+    firstSong.setAuthor("Tini");
+    System.out.println(firstSong.getTitle());
+    System.out.println(firstSong.getAuthor());
   }
 }
 
