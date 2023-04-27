@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5751f01c-c596-47c0-932f-d1cfb6774689" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 11 de abril/Exercise2/Exercise2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Clase 14 de abril/Exercise 4/Exercise 4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 14 de abril/Exercise 4/Exercise 4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Clase 18 de abril/Exercise 6/Exercise 6/out/production/Exercise 6/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 18 de abril/Exercise 6/Exercise 6/out/production/Exercise 6/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Clase 18 de abril/Exercise 6/Exercise 6/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase 18 de abril/Exercise 6/Exercise 6/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pablopronsky/oop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pablopronsky/oop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pablopronsky/oop/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pablopronsky/oop/Operation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

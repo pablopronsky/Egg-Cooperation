@@ -29,7 +29,7 @@ public class Main {
     System.out.println(circunferencia.area(155));
     System.out.println(circunferencia.perimetro(155));*/
 
-    /* Ejercicio 3
+     //Ejercicio 3
     Operation operation = new Operation();
     operation.crearOperacion();
     System.out.println("La suma de " + operation.getNumero1() + " + " + operation.getNumero2() +
@@ -39,14 +39,14 @@ public class Main {
     System.out.println("La multiplicacion de " + operation.getNumero1() + " * " + operation.getNumero2() +
     " es igual a: " + (operation.multiplicar()));
     System.out.println("La division de " + operation.getNumero1() + " dividido " + operation.getNumero2() +
-    " es igual a: " + operation.dividir());*/
+    " es igual a: " + operation.dividir());0
 
-    // Ejercicio 4
+    /*Ejercicio 4
     Rectangle rectangle = new Rectangle();
     rectangle.rectangleCreator();
     rectangle.calculateSurface();
     rectangle.calculatePerimeter();
-    rectangle.drawRectangle();
+    rectangle.drawRectangle(); */
 
   }
 }

@@ -59,7 +59,7 @@ public class Operation {
   }
 
   int multiplicar(){
-    if (numero2 == 0){
+    if (numero1 == 0 || numero2 == 0){
       System.out.println("No se puede dividir por 0");
       return 0;
     }
@@ -67,7 +67,7 @@ public class Operation {
   }
 
   int dividir (){
-    if (numero2 == 0){
+    if (numero1 == 0 || numero2 == 0){
       System.out.println("No se puede dividir por 0");
       return 0;
     }
