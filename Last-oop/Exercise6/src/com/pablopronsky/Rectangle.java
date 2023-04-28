@@ -9,8 +9,8 @@ public class Rectangle {
     this.side2 = side2;
   }
   //metodo
-  public void calculateArea(){
-    System.out.println(side1 * side2);
+  public int calculateArea(){
+     return side1 * side2;
   }
 }
 /*Crea una clase "Rectángulo" que tenga atributos "lado1" y "lado2" y un método
