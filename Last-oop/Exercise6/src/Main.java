@@ -5,7 +5,6 @@ public class Main {
     Rectangle rectangle = new Rectangle(4, 6);
     int area = rectangle.calculateArea();
     System.out.println("El area del rectangulo es: " + area);
-
   }
 }
 /*Crea una clase "Rectángulo" que tenga atributos "lado1" y "lado2" y un método
